@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/secondaryBackgroundColor"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/contact_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Mobile number -->
+    <TextView
+        android:id="@+id/contact_mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(123) 456-7890"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:dividerColor="@color/backgroundColor" />
+
+
+    <!-- Delete button aligned to the right -->
+
+</LinearLayout>

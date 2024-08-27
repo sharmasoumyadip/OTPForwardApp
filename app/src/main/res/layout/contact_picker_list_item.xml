@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_picker_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="2dp"
+    android:background="@color/secondaryBackgroundColor"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Container for contact details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Display name -->
+        <TextView
+            android:id="@+id/contact_picker_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Mobile number -->
+        <TextView
+            android:id="@+id/contact_picker_list_item_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(123) 456-7890"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <!-- Checkbox aligned to the right -->
+    <CheckBox
+        android:id="@+id/contact_picker_list_item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:buttonTint="@color/textColor2"
+        android:padding="4dp" />
+
+</LinearLayout>

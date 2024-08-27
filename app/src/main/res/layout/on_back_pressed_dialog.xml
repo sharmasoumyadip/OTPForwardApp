@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Changes won’t be saved and discarded?"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_discard_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.7"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Discard"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/dialog_continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue Editing" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Default dimensions for the app -->
+    <dimen name="design_navigation_icon_padding" tools:override="true">1dp</dimen>
+
+</resources>

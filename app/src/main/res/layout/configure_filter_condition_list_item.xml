@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Select Filer Field"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/configure_filter_field_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:backgroundTint="@color/secondaryBackgroundColorLite"
+            android:backgroundTintMode="multiply"
+            android:padding="8dp"
+            android:spinnerMode="dropdown" />
+
+
+        <Spinner
+            android:id="@+id/configure_filter_operator_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:backgroundTint="@color/secondaryBackgroundColorLite"
+            android:backgroundTintMode="multiply"
+            android:padding="8dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:text="Below value is case-insensitive"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/configure_filter_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:hint="Enter filter value"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/configure_filter_del_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Delete" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

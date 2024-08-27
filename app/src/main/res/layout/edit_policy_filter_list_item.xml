@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/secondaryBackgroundColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/filter_item_filter_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FILTER FIELD"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/filter_item_filter_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Operator"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/filter_item_filter_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Value"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:dividerColor="@color/backgroundColor" />
+
+
+</LinearLayout>

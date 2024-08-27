@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorTiles">#ECE9E9</color>
+
+    <color name="colorPrimary">#C2185B</color>
+
+
+    <color name="colorSecondary">#B2D491</color>
+
+
+    <color name="primaryColour">#C2185B</color>
+    <color name="secondaryColour">#77E37B</color>
+    <color name="textColor">#000000</color>
+    <color name="textColor2">#E56B6F</color>
+    <color name="del">#e74c3c</color>
+
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="secondaryBackgroundColor">#F0F0F0</color>
+    <color name="secondaryBackgroundColorLite">#F0F0F0</color>
+    <color name="transparentOverLay">#61BCBBBB</color>
+
+
+</resources>

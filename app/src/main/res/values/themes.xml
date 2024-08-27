@@ -1,0 +1,60 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OTPForwardApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowLayoutInDisplayCutoutMode">never</item>
+    </style>
+
+    <style name="Theme.OTPForwardApp" parent="Base.Theme.OTPForwardApp">
+        <item name="fontFamily">@font/space_medium</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="cardViewStyle">@style/Theme.OTPForwardApp.CardView</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="materialButtonStyle">@style/Theme.OTPForwardApp.Button</item>
+    </style>
+
+    <style name="Theme.OTPForwardApp.CardView" parent="Theme.OTPForwardApp">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="contentPaddingTop">8dp</item>
+        <item name="contentPaddingBottom">8dp</item>
+        <item name="cardBackgroundColor">@color/secondaryBackgroundColor</item>
+
+    </style>
+
+    <style name="Theme.OTPForwardApp.Button" parent="Theme.OTPForwardApp">
+        <item name="backgroundTint">@color/primaryColour</item>
+        <item name="android:padding">10dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:textColor">@color/backgroundColor</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+    <style name="ButtonBG" parent="Theme.OTPForwardApp">
+        <item name="android:background">@drawable/baseline_delete_24</item>
+        <item name="backgroundTint">@color/del</item>
+    </style>
+
+    <style name="Theme.OTPForwardApp.SplashScreen" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation
+   duration. -->
+        <item name="windowSplashScreenBackground">#262626</item>
+
+        <!-- Use windowSplashScreenAnimatedIcon to add a drawable or an animated
+             drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/otp_icon_192</item>
+        <!-- Required for animated icons. -->
+
+
+        <!-- Set the theme of the Activity that directly follows your splash
+        screen. This is required. -->
+        <item name="postSplashScreenTheme">@style/Theme.OTPForwardApp</item>
+    </style>
+
+    <style name="bottm">
+        <item name="android:titleMarginTop">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+    </style>
+
+
+</resources>

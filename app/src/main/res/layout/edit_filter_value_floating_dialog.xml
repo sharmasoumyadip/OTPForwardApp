@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <EditText
+        android:id="@+id/dialog_filter_value_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusedByDefault="true"
+        android:hint="Enter Filter Value"
+        android:inputType="text"
+        android:maxLines="1"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:text="Above value is Cap-Insensitive"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/dialog_filter_value_update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="UPDATE" />
+
+</LinearLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/edit_policy_outer_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/edit_policy_error_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atleast One Contact needs to be selected"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/edit_policy_title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/policy_title_label"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <!--            <TextView-->
+            <!--                android:id="@+id/edit_policy_title_error"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Title length can not be less than 6 or blank"-->
+            <!--                android:textStyle="italic"-->
+            <!--                android:textSize="12sp"-->
+            <!--                android:textColor="@android:color/holo_red_dark"-->
+            <!--                android:visibility="gone"-->
+            <!--                />-->
+            <EditText
+                android:id="@+id/edit_policy_title_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/identifier_label"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/edit_policy_identifier_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Unique Message Identifier"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_policy_identifier_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Enter unique message identifier"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/edit_policy_active_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/activate_policy_label"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/edit_policy_active_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:checked="true"
+                android:textColor="@android:color/white"
+                app:thumbTint="@color/thumb_selector"
+                app:trackTint="@android:color/darker_gray" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/edit_policy_filter_error"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Atleast One Filter needs to be configured"-->
+            <!--                android:textStyle="italic"-->
+            <!--                android:textSize="12sp"-->
+            <!--                android:textColor="@android:color/holo_red_dark"-->
+            <!--                android:visibility="gone"-->
+            <!--                />-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/backgroundColor"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/edit_policy_filter_inner_con"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/edit_policy_filter_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/filter_label"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/edit_policy_filter_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/edit_policy_empty_filter_list_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.6"
+                        android:padding="10dp"
+                        android:text="No Items to Show"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@id/edit_policy_filter_inner_con" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/edit_policy_filter_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:clipToPadding="false"
+                        android:padding="2dp"
+                        android:scrollbars="vertical"
+
+                        app:layout_constraintTop_toBottomOf="@id/edit_policy_filter_inner_con" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/backgroundColor"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/edit_policy_contacts_inner_con"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/edit_policy_contacts_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/select_contacts_label"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/edit_policy_contacts_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/edit_policy_empty_contact_list_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.6"
+                        android:padding="10dp"
+                        android:text="No Items to Show"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@id/edit_policy_contacts_inner_con" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/edit_policy_contact_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:clipToPadding="false"
+                        android:padding="2dp"
+                        android:scrollbars="vertical"
+                        app:layout_constraintTop_toBottomOf="@id/edit_policy_contacts_inner_con" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/edit_policy_cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:text="Cancel"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/edit_policy_save_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:text="Save"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
