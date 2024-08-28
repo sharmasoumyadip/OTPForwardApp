@@ -1,6 +1,7 @@
 package com.soumyadip.otpforwardapp.infrastructure
 
 import android.telephony.SmsManager
+
 import com.soumyadip.otpforwardapp.domain.OTPForwardSMSSender
 import com.soumyadip.otpforwardapp.domain.dto.SMSData
 import kotlinx.coroutines.Dispatchers
@@ -11,8 +12,11 @@ class OTPForwardSMSSenderImpl(private val smsManager: SmsManager) : OTPForwardSM
         withContext(Dispatchers.IO) {
             for (smsToSent in toBeSentSMSList) {
                 val messageBody = smsToSent.finalMessage
+                val divideMessage = smsManager.divideMessage(messageBody)
+
                 for (recipient in smsToSent.listOfRecipients) {
-                    smsManager.sendTextMessage(recipient, null, messageBody, null, null)
+
+                    smsManager.sendMultipartTextMessage(recipient,null,divideMessage,null,null)
 
                 }
             }
